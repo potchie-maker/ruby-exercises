@@ -71,10 +71,11 @@ end
 # return value: true if the year is between 2001 - 2100, otherwise return false
 # hint: use Comparable#between?
 def twenty_first_century?(year)
-  if year >= 2001 && year <= 2100
-    true
-  else
-    false
-  end
+  # if year >= 2001 && year <= 2100
+  #   true
+  # else
+  #   false
+  # end
+  year.between?(2001, 2100)
 end
 
